@@ -3,26 +3,19 @@ body {
   font-family: Arial, sans-serif;
   background: #111;
   text-align: center;
-
-  /* centralização vertical */
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
 }
 
+/* Menu */
 nav {
   background: #222;
   padding: 30px 0;
-  width: 100%;
 }
 
 nav a {
   margin: 0 40px;
   text-decoration: none;
   color: #fff;
-  font-size: 28px; /* letra maior */
+  font-size: 28px;
   font-weight: bold;
   transition: color 0.3s ease;
 }
@@ -31,11 +24,9 @@ nav a:hover {
   color: royalblue;
 }
 
-/* Texto abaixo do menu */
+/* Texto abaixo */
 #descricao {
   margin-top: 40px;
-  font-size: 26px; /* maior também */
+  font-size: 26px;
   color: #fff;
-  min-height: 30px;
-  max-width: 600px;
 }
