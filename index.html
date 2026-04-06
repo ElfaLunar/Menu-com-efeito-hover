@@ -2,32 +2,26 @@
 <html lang="pt-BR">
 <head>
   <meta charset="UTF-8">
-  <title>Menu com Hover e Descrição</title>
+  <title>Menu com Descrição Dinâmica</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
   <nav>
-    <a href="#">
-      Início
-      <span class="descricao">Página principal</span>
-    </a>
-
-    <a href="#">
-      Sobre
-      <span class="descricao">Sou uma pequena artista em andamento</span>
-    </a>
-
-    <a href="#">
-      Serviços
-      <span class="descricao">Faço marca páginas, capas de livros, criação de personagens e vendo desenhos</span>
-    </a>
-
-    <a href="#">
-      Contato
-      <span class="descricao">luanayborini@gmail.com</span>
-    </a>
+    <a href="#" onmouseover="mudarTexto('Página principal')">Início</a>
+    <a href="#" onmouseover="mudarTexto('Sou uma pequena artista em andamento')">Sobre</a>
+    <a href="#" onmouseover="mudarTexto('Faço marca páginas, capas de livros, criação de personagens e vendo desenhos')">Serviços</a>
+    <a href="#" onmouseover="mudarTexto('luanayborini@gmail.com')">Contato</a>
   </nav>
+
+  <!-- Área de descrição -->
+  <div id="descricao">Passe o mouse sobre o menu</div>
+
+  <script>
+    function mudarTexto(texto) {
+      document.getElementById("descricao").innerText = texto;
+    }
+  </script>
 
 </body>
 </html>
