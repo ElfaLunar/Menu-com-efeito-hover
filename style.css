@@ -3,18 +3,27 @@ body {
   font-family: Arial, sans-serif;
   background: #111;
   text-align: center;
+
+  /* centralização vertical */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
 }
 
 nav {
   background: #222;
-  padding: 20px 0;
+  padding: 30px 0;
+  width: 100%;
 }
 
 nav a {
-  margin: 0 25px;
+  margin: 0 40px;
   text-decoration: none;
   color: #fff;
-  font-size: 18px;
+  font-size: 28px; /* letra maior */
+  font-weight: bold;
   transition: color 0.3s ease;
 }
 
@@ -24,9 +33,9 @@ nav a:hover {
 
 /* Texto abaixo do menu */
 #descricao {
-  margin-top: 30px;
-  font-size: 18px;
-  color: royalblue;
-  min-height: 24px;
-  transition: opacity 0.3s ease;
+  margin-top: 40px;
+  font-size: 26px; /* maior também */
+  color: #fff;
+  min-height: 30px;
+  max-width: 600px;
 }
