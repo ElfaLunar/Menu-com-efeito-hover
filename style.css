@@ -2,60 +2,31 @@ body {
   margin: 0;
   font-family: Arial, sans-serif;
   background: #111;
+  text-align: center;
 }
 
 nav {
   background: #222;
   padding: 20px 0;
-  text-align: center;
 }
 
 nav a {
-  position: relative;
-  display: inline-block;
   margin: 0 25px;
   text-decoration: none;
   color: #fff;
   font-size: 18px;
-  padding: 5px 0;
   transition: color 0.3s ease;
 }
 
-/* Descrição escondida */
-.descricao {
-  position: absolute;
-  left: 50%;
-  bottom: -25px;
-  transform: translateX(-50%) translateY(10px);
-  font-size: 12px;
-  color: royalblue;
-  opacity: 0;
-  transition: all 0.3s ease;
-  white-space: nowrap;
-}
-
-/* Linha animada */
-nav a::after {
-  content: "";
-  position: absolute;
-  left: 0;
-  bottom: -5px;
-  width: 0;
-  height: 2px;
-  background: royalblue;
-  transition: width 0.3s ease;
-}
-
-/* Hover */
 nav a:hover {
   color: royalblue;
 }
 
-nav a:hover::after {
-  width: 100%;
-}
-
-nav a:hover .descricao {
-  opacity: 1;
-  transform: translateX(-50%) translateY(0);
+/* Texto abaixo do menu */
+#descricao {
+  margin-top: 30px;
+  font-size: 18px;
+  color: royalblue;
+  min-height: 24px;
+  transition: opacity 0.3s ease;
 }
